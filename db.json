@@ -2,13 +2,18 @@
   "anecdotes": [
     {
       "content": "fafaf",
-      "votes": 0,
+      "votes": 27,
       "id": 1
     },
     {
       "content": "fafaf",
-      "votes": 0,
+      "votes": 13,
       "id": 2
+    },
+    {
+      "content": "afafa",
+      "votes": 8,
+      "id": 3
     }
   ]
 }

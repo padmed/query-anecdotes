@@ -3,6 +3,7 @@ import { addAnecdote } from "../requests/anecdotes";
 
 const AnecdoteForm = () => {
   const client = useQueryClient();
+
   const newAnecdoteMutation = useMutation({
     mutationFn: addAnecdote,
     onSuccess: (anecdote) => {
