@@ -2,7 +2,7 @@
   "anecdotes": [
     {
       "content": "fafaf",
-      "votes": 27,
+      "votes": 28,
       "id": 1
     },
     {
@@ -14,6 +14,21 @@
       "content": "afafa",
       "votes": 8,
       "id": 3
+    },
+    {
+      "content": "fafff",
+      "votes": 0,
+      "id": 4
+    },
+    {
+      "content": "fafaf",
+      "votes": 0,
+      "id": 5
+    },
+    {
+      "content": "fafae",
+      "votes": 0,
+      "id": 6
     }
   ]
 }

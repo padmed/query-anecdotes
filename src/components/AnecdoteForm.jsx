@@ -11,18 +11,18 @@ const AnecdoteForm = () => {
     onSuccess: (anecdote) => {
       const anecdotes = client.getQueryState().data;
       client.setQueryData(["anecdotes"], [...anecdotes, anecdote]);
+      showNotification(`Added: "${anecdote.content}"`, 5000);
+    },
+    onError: (e) => {
+      showNotification(e.message, 5000);
     },
   });
 
   const onCreate = (event) => {
     event.preventDefault();
     const content = event.target.anecdote.value;
-
-    if (content.length >= 5) {
-      event.target.anecdote.value = "";
-      newAnecdoteMutation.mutate({ content, votes: 0 });
-      showNotification(`Added: "${content}"`, 5000);
-    }
+    event.target.anecdote.value = "";
+    newAnecdoteMutation.mutate({ content, votes: 0 });
   };
 
   return (
